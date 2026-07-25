@@ -9,8 +9,8 @@
 // const score: number = 100 // in Typescript
 
 
-// const score = 100
-// const scoreValue = 10.1
+const score = 100
+const scoreValue = 10.1
 
 // const isLoggedIn = true
 // const temperature = null
@@ -22,6 +22,8 @@
 // console.log( id === anotherId)
 
 const bigNumber = 45324546457658678967645342314n
+
+
 
 
 // Non-Premitive datatypes
@@ -44,7 +46,7 @@ let myDetail = {
 
 //Fucntion
 function sum(a , b){
-    console.log(a + b)
+    // console.log(a + b)
 }
 
 let a = 5 , b = 10
@@ -53,15 +55,15 @@ sum(a , b)
 // Direclty store the function in a variable
 
 let myFunc = function(){
-    console.log("Knock Knock")
+    // console.log("Knock Knock")
 }
 // Function Call
 myFunc()
 
 
 //Checking the data type of a variable
-console.log(typeof bigNumber) 
-console.log(typeof(heros))
+// console.log(typeof bigNumber) 
+// console.log(typeof(heros))
 
 
 
@@ -82,3 +84,29 @@ console.log(typeof(heros))
 
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+// -----------------------------------------------------
+
+// Stack(Premitive data types), Heap(Non-Premitive data types)
+
+
+let myName = "Shankar"
+let anotherName = myName
+
+anotherName = "Adhikari"
+console.log(myName)
+console.log(anotherName)
+
+
+let user1 = {
+    email: "shankar@google.com",
+    id: 123,
+}
+
+let user2 = user1
+user2.email = "adhikari@google.com"
+
+
+// console.log(user1.email)
+// console.log(user2.email)
