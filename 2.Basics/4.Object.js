@@ -70,11 +70,50 @@ const users = [
 // console.log(users[0])
 
 
-console.log(tinderUser)
+// console.log(tinderUser)
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
-console.log(tinderUser.hasOwnProperty('isLoggedin'));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
+// console.log(tinderUser.hasOwnProperty('isLoggedin'));
+
+
+
+//Destructuring
+
+
+const course = {
+    courseName: "js",
+    price: 999,
+    courseInstructor: "aaa"
+}
+
+// console.log(course.courseInstructor);
+
+const {courseInstructor : ci} = course
+
+console.log(ci);
+
+
+
+
+//---------------------APIs-------------------
+
+
+//-------------JSON---------------
+// {
+//     "name" : 'shankar', // keys are also inside inverted comma
+//     "coursename" : 'js',
+//     "price": 'free'
+
+// }
+
+
+[
+    {},
+    {},
+    {}
+]
+
 
 
