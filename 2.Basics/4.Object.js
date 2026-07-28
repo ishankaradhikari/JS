@@ -92,8 +92,7 @@ const course = {
 
 const {courseInstructor : ci} = course
 
-console.log(ci);
-
+// console.log(ci);
 
 
 
@@ -115,5 +114,38 @@ console.log(ci);
     {}
 ]
 
+
+//-----------------Practice-------------------
+// creating a object
+const student = {
+    id: 1,
+    name: "shankar",
+    address: "kathmandu",
+    course: 'csit',
+    isLoggedIn: false,
+    enrolled: true,
+    faculty: 'science'
+}
+
+
+// object Destructuring
+
+const {id: id, name: na, address: ad, course: c, isLoggedIn: isl, enrolled: e, faculty: f} = student
+// console.log(id, na, ad, c, isl, e, f)
+
+
+// Object Destructuring
+const stu1 = Object()
+
+stu1.name = "shankar"
+stu1.age = 23
+
+const {name: n, age: a} = stu1 
+
+
+
+// console.log(student)
+// console.log(n)
+// console.log(a)
 
 
