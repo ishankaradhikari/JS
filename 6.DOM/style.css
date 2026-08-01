@@ -1,0 +1,19 @@
+body{
+    background-color: #212121;
+    color: #996363;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h2{
+    color: #996363;
+}
+
+#pass{
+    background-color: #996363;
+    border: none;
+    color: #212121;
+}
