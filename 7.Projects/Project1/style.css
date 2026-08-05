@@ -23,7 +23,8 @@ a{
 }
 
 span{
-    display: block;
+    display: inline-block;
+    
 }
 
 .button{
