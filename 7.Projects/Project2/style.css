@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    background-color: blanchedalmond;
+}
+a{
+    margin: 10px;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid black;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+.canvas{
+    margin: 100px;
+    
+}
+
