@@ -21,6 +21,12 @@ a{
     border-radius: 5px;
     text-decoration: none;
 }
+#results{
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 
 .canvas{
