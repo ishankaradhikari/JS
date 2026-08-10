@@ -28,7 +28,12 @@ a{
     padding: 5px 10px;
 }
 
-.container{
+input{
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+.wrapper{
     color: white;
     text-align: center;
     display: flex;
