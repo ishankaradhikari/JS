@@ -5,19 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Events</title>
 </head>
-<body style="background-color: #414141;">
-  <h2>Amazing image</h2>
+<body style="background-color: #414141; color: white">
+  <h2>Amazing images</h2>
   <div>
     <ul id="images">
       <li>
-        <img width="200px" id="photoshop" 
-             src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" 
-             alt="photoshop">
+        <img width="200px" id="fishtail" 
+             src="https://images.pexels.com/photos/28277464/pexels-photo-28277464.jpeg?_gl=1*1stpeux*_ga*ODg0ODk4ODguMTc4NjYyMTIzOA..*_ga_8JE65Q40S6*czE3ODY2MjEyMzckbzEkZzEkdDE3ODY2MjE0ODMkajIkbDAkaDA." 
+             alt="fishtail">
       </li>
       <li>
-        <img width="200px" id="japan" 
-             src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" 
-             alt="japan">
+        <img width="200px" id="house" 
+             src="https://images.pexels.com/photos/4750098/pexels-photo-4750098.jpeg" 
+             alt="house">
       </li>
       <li>
         <img width="200px" id="river" 
@@ -26,10 +26,71 @@
       </li>
       <li>
         <img width="200px" id="owl" 
-             src="https://images.pexels.com/photos/3561338/pexels-photo-3561338.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" 
+             src="https://images.pexels.com/photos/37989190/pexels-photo-37989190.jpeg?_gl=1*1j12nai*_ga*ODg0ODk4ODguMTc4NjYyMTIzOA..*_ga_8JE65Q40S6*czE3ODY2MjEyMzckbzEkZzEkdDE3ODY2MjEyNDIkajU1JGwwJGgw" 
              alt="owl">
       </li>
+      <li><a  style = "color: white;" href="https://google.com" id = "google">Google</a></li>
+
     </ul>
   </div>
 </body>
+
+<script>
+  // document.getElementById('fishtail').onclick = function(){
+  //   alert("This is a image of Fishtail Mountain Nepal")
+  // }
+
+
+  //attachEvent Method
+  //jQuery - on
+
+
+  // type, timestamp, defaultPrevented
+// target, toElement, srcElement, currentTarget
+// clientX, clientY, screenX, screenY
+// altkey, ctrlkey, shiftkey, keyCode
+
+
+
+
+
+  //Best approach
+
+  // document.getElementById('images').addEventListener('click', function(e){
+  //   // alert("This is a image of Fishtail Mountain Nepal")
+  //   console.log("clicked inside the ul");
+    
+  // }, false)
+
+  // // ture - capturing
+  // // false - bubbling  and false is the default value
+  
+
+  // document.getElementById('fishtail').addEventListener('click', function(e){
+  //   // alert("This is a image of Fishtail Mountain Nepal")
+  //   console.log("fushtail clicked");
+  //   e.stopPropagation()
+  // }, false)
+
+  // document.getElementById('google').addEventListener('click', function(e){
+  //   console.log("google clicked");
+  //   e.stopPropagation()
+  //   e.preventDefault()
+  // }, false)
+
+  document.querySelector('#images').addEventListener('click', function(e){
+    console.log(e.target.parentNode);
+    console.log(e.target.tagName);
+
+    if(e.target.tagName === "IMG"){
+      console.log(e.target.id);
+      
+      let removeImage = e.target.parentNode
+    removeImage.remove()
+    // removeImage.parentNode.removeChile(removeImage)
+    }
+  }, false)
+
+</script>
+
 </html>
